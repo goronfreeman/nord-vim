@@ -106,6 +106,13 @@ if exists("g:nord_italic_comments")
   endif
 endif
 
+let s:italicize_definitions = ""
+if exists("g:nord_italic_definitions")
+  if g:nord_italic_definitions == 1
+    let s:italicize_definitions = s:italic
+  endif
+endif
+
 if !exists('g:nord_uniform_status_lines')
   let g:nord_uniform_status_lines = 0
 endif
@@ -276,7 +283,7 @@ call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Comment", s:nord3_gui_bright, "", s:nord3_term, "", s:italicize_comments, "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
-call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", s:italicize_definitions, "")
 call s:hi("Delimiter", s:nord6_gui, "", s:nord6_term, "", "", "")
 call s:hi("Exception", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Float", s:nord15_gui, "", s:nord15_term, "", "", "")
