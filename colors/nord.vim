@@ -287,7 +287,7 @@ call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Delimiter", s:nord6_gui, "", s:nord6_term, "", "", "")
 call s:hi("Exception", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Float", s:nord15_gui, "", s:nord15_term, "", "", "")
-call s:hi("Function", s:nord8_gui, "", s:nord8_term, "", s:italicize_functions, "")
+call s:hi("Function", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("Identifier", s:nord4_gui, "", "NONE", "", "NONE", "")
 call s:hi("Include", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Keyword", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -488,11 +488,13 @@ hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("rubyDefine", s:nord9_gui, "", s:nord9_term, "", s:italicize_functions, "")
+call s:hi("rubyMethodName", s:nord8_gui, "", s:nord8_term, "", s:italicize_functions, "")
+call s:hi("rubyKeywordAsMethod", s:nord8_gui, "", s:nord8_term, "", s:italicize_functions, "")
 call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", s:bold, "")
 hi! link rubyAttribute Identifier
 hi! link rubyBlockParameterList Operator
 hi! link rubyInterpolationDelimiter Keyword
-hi! link rubyKeywordAsMethod Function
 hi! link rubyLocalVariableOrMethod Function
 hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
