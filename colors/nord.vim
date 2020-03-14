@@ -489,8 +489,9 @@ hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("rubyDefine", s:nord9_gui, "", s:nord9_term, "", s:italicize_functions, "")
-call s:hi("rubyMethodName", s:nord8_gui, "", s:nord8_term, "", s:italicize_functions, "")
 call s:hi("rubyKeywordAsMethod", s:nord8_gui, "", s:nord8_term, "", s:italicize_functions, "")
+call s:hi("rubyMethodName", s:nord8_gui, "", s:nord8_term, "", s:italicize_functions, "")
+call s:hi("rubyPseudoVariable", s:nord9_gui, "", s:nord9_term, "", s:italicize_functions, "")
 call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", s:bold, "")
 hi! link rubyAttribute Identifier
 hi! link rubyBlockParameterList Operator
